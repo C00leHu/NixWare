@@ -1,7 +1,4 @@
-![CS2PY](https://raw.githubusercontent.com/GsDeluxe/cs2py/main/img/cs2py_banner.png)
-
 External CS2 Cheat written in Python3
-> you can find offsets by using this [offset dumper](https://github.com/a2x/cs2-dumper)
 
 ## Installation
 
@@ -30,14 +27,3 @@ python main.py
 - [x] Color Customization  
 - [x] Auto Save Config
 
-## Credits
-
-> **Big Thanks to [HWYkagiru](https://github.com/HWYkagiru) for the GUI revamp 💖**
-
-## Preview
-
-![VISUALS_IMG](https://raw.githubusercontent.com/GsDeluxe/cs2py/main/img/esp_view.png)
-
-| Aimbot | Visuals | Triggerbot | Recoil control | Colors | Misc |
-|:------:|:-------:|:-----------:|:---------------:|:------:|:----:|
-| ![Aimbot](https://raw.githubusercontent.com/GsDeluxe/cs2py/main/img/aimbot_tab.png) | ![Visuals](https://raw.githubusercontent.com/GsDeluxe/cs2py/main/img/esp_tab.png) | ![Triggerbot](https://raw.githubusercontent.com/GsDeluxe/cs2py/main/img/triggerbot_tab.png) | ![Recoil control](https://raw.githubusercontent.com/GsDeluxe/cs2py/main/img/rcs_tab.png) | ![Colors](https://raw.githubusercontent.com/GsDeluxe/cs2py/main/img/colors_tab.png) | ![Misc](https://raw.githubusercontent.com/GsDeluxe/cs2py/main/img/misc_tab.png) |
