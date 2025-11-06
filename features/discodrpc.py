@@ -1,31 +1,30 @@
 from pypresence import Presence
 import time
 
+
+CLIENT_ID = "1435943038223650937"
+
 def DiscordRpcThread(Options):
-	while True:
-		try:
-			presence = Presence(1277586728517107744)
-			presence.connect()
-			a = False
-			while True:
-				if Options["EnableDiscordRPC"]:
-					if not a:
-						try:
-							presence.update(
-								state="github.com/GsDeluxe/cs2py",
-								details="FREE CS2 CHEAT",
-								start=int(time.time()),
-								large_image="cs2py",
-								large_text="cs2py",
-								small_image="github",
-								small_text="GsDeluxe on GitHub",
-								buttons=[{'label': 'GitHub', 'url': 'https://github.com/GsDeluxe/cs2py'}]
-							)
-						except Exception as e:
-							pass
-					a = True
-					time.sleep(1)
-				else:
-					time.sleep(1)
-		except:
-			time.sleep(30)
+    while True:
+        try:
+            presence = Presence(CLIENT_ID)
+            presence.connect()
+            updated = False
+            while True:
+                if Options.get("EnableDiscordRPC", False):
+                    if not updated:
+                        try:
+                            presence.update(
+                                details="NexWare - CS2 External",            
+                                start=int(time.time()),         
+                                large_image="nixware_image",   
+                                large_text="Made by C00leHu"           
+                            )
+                        except Exception as e:
+                            pass
+                    updated = True
+                    time.sleep(1)
+                else:
+                    time.sleep(1)
+        except:
+            time.sleep(30)

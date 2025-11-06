@@ -23,6 +23,8 @@ import serial.tools.list_ports
 import win32con, win32process, win32api
 import keyboard, os, json
 
+from pyfiglet import Figlet
+
 keyboard.add_hotkey("end", callback=lambda: os._exit(0))
 keyboard.add_hotkey("insert", callback=lambda: gui_util.hide_dpg())
 keyboard.add_hotkey("home", callback=lambda: gui_util.streamproof_toggle())
@@ -79,14 +81,10 @@ def LoadConfig():
 
 if __name__ == "__main__":
 
-	print("""  _   _ _        _                            
- | \\ | (_) ___  | | ___   ___  _ __ ___  ___ 
- |  \\| | |/ _ \\ | |/ _ \\ / _ \\| '__/ _ \\/ __|
- | |\\  | |  __/ | | (_) | (_) | | |  __/\\__ \\
- |_| \\_|_|\\___| |_|\\___/ \\___/|_|  \\___||___/
-
-             - By C00leHu""")
-
+	
+	f = Figlet(font="slant")   # try "standard", "slant", "big", etc.
+	print(f.renderText("NexWare"))
+	print("             - By C00leHu")
 	
 	autoupdate.check_and_update()
 

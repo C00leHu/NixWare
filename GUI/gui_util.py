@@ -14,7 +14,7 @@ STREAMPROOF = False
 def hide_dpg():
 	global HIDDEN
 	global STREAMPROOF
-	hwnd = win32gui.FindWindow(None, "NixWare")
+	hwnd = win32gui.FindWindow(None, "NexWare")
 	if HIDDEN:
 		win32gui.ShowWindow(hwnd, win32con.SW_SHOW)
 		if STREAMPROOF:
@@ -27,7 +27,7 @@ def hide_dpg():
 
 def streamproof_toggle():
 	global STREAMPROOF
-	hwnd1 = win32gui.FindWindow(None, "NixWare")
+	hwnd1 = win32gui.FindWindow(None, "NexWare")
 	hwnd2 = win32gui.FindWindow(None, "ESP-Overlay")
 	if STREAMPROOF:
 		print("STREAMPROOF OFF")

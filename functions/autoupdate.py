@@ -5,7 +5,7 @@ import shutil
 from pathlib import Path
 
 GITHUB_USER = "C00leHu"
-GITHUB_REPO = "NixWare"
+GITHUB_REPO = "NexWare"
 BRANCH = "main"
 
 def get_remote_version():

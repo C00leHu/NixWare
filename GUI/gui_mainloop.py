@@ -364,7 +364,7 @@ class CS2PY_GUI:
 	def init_context(self):
 		dpg.create_context()
 		self.viewport = dpg.create_viewport(
-			title="cs2py",
+			title="NexWare",
 			width=self.viewport_width,
 			height=self.viewport_height,
 			vsync=True,
@@ -533,7 +533,7 @@ class CS2PY_GUI:
 		dpg.destroy_context()
 
 	def build_ui(self):
-		with dpg.window(label="NixWare v20.1", width=self.viewport_width, height=self.viewport_height, no_move=True, no_resize=True, no_close=True, no_collapse=True, tag="cs2py_dpg_window"):
+		with dpg.window(label="NexWare V0.1 [BETA]", width=self.viewport_width, height=self.viewport_height, no_move=True, no_resize=True, no_close=True, no_collapse=True, tag="cs2py_dpg_window"):
 			dpg.add_text("INS Show/Hide Menu")
 			dpg.add_text("END To Quit Program")
 			dpg.add_text("HOME For Streamproof")
